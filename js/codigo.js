@@ -1,14 +1,15 @@
-//alert ("hola que tal javascript");
-$(document).ready(function (inicializar) {
+var x;
+x=$(document);
+x.ready(iniciar);
 
+function iniciar(){
   var x;
-  x.$("#hola");
-  x.click(Verde);
-});
-$('#hola').function(Verde)({
-  var x;
-  x = $("#hola");
-  x.css("color", "green"));
+x=$("#hola");
+x.click(verde);
 }
-
+function verde(){
+  var x;
+  x=$("#hola");
+  x.css("color","red");
+}
 
