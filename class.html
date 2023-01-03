@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/jquery-3.6.0.js"></script>
+    <title>USAR CLASES</title>
+    <style>
+        .verdura{
+            text-align : center;
+        }
+    </style>
+    <script>
+        var x;
+        x=$(document);
+        x.ready(resaltar);
+
+        function resaltar(){
+            var x;
+            x=$("#iniciar");
+            x.click(resaltaverdura);
+
+        }
+        function resaltaverdura(){
+            var x;
+            x=$(".verdura");
+            x.css("text-color","red");
+            
+        }
+    </script>
+  
+    
+</head>
+<body>
+    <div class="verdura">
+    <input type="button" id="iniciar" value="Mostar Verduras"><br>
+      <span class="verdura">Papas</span>
+       Naranjas
+        <span class="verdura">Brocoli</span>
+         Peras 
+         <span class="verdura">Zanahoria</span>
+</div>
+    
+</body>
+</html>
